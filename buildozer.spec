@@ -17,27 +17,22 @@ source.include_exts = py,png,jpg,kv,atlas
 
 # Application version
 version = 0.1
+
+# Kivy version
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
+requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pyaudio,soundfile,numpy,librosa,scikit-learn,pillow
 
 # Supported orientations
 orientation = portrait
 
-
-osx.python_version = 3.7.6
-
-
-
 # Android specific settings
 fullscreen = 0
-android.archs = arm64-v8a, armeabi-v7a
+android.arch = armeabi-v7a
+android.ndk = 25b
 android.api = 31
 android.minapi = 21
-android.sdk = 31
-android.ndk = 25b
-android.ndk_api = 21
 
 # Permissions
 android.permissions = RECORD_AUDIO,WRITE_EXTERNAL_STORAGE
