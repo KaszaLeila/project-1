@@ -20,10 +20,15 @@ version = 0.1
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3,kivy,pyaudio,librosa,scikit-learn,soundfile,numpy
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
 
 # Supported orientations
 orientation = portrait
+
+
+osx.python_version = 3.7.6
+
+
 
 # Android specific settings
 fullscreen = 0
