@@ -22,7 +22,8 @@ version = 0.1
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pyaudio,soundfile,numpy,librosa,scikit-learn,pillow
+
+requirements = python3==3.9.10,hostpython3==3.9.10,kivy,pyaudio,soundfile,numpy,librosa,scikit-learn,pillow
 
 # Supported orientations
 orientation = portrait
