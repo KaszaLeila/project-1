@@ -1,48 +1,40 @@
 [app]
-package.name = myspeechemotionapp
-package.domain = org.example
-source.dir = .
-
-source.include_exts = py,png,jpg,kv,atlas,wav,model,result
-
-# (str) Application versioning (method1)
-version = 1.0
-
-# (list) Application requirements
-requirements = python3,kivy,pyaudio,numpy,librosa,scikit-learn,soundfile
-
-# (str) Title of your application
+# Title of your application
 title = Speech Emotion Recognition
-
-# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
+# Package name
+package.name = speechemotionrecognition
+# Package domain
+package.domain = org.test
+# Source code directory
+source.dir = .
+# Source files to include
+source.include_exts = py,png,jpg,kv,atlas
+# Application version
+version = 0.1
+osx.kivy_version = 2.1.0
+# Application requirements
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
+# Supported orientations
 orientation = portrait
-
-# (list) Permissions
-android.permissions = RECORD_AUDIO,WRITE_EXTERNAL_STORAGE
-
-# (int) Android API to use
-android.api = 27
-
-# (int) Minimum API required
+osx.python_version = 3.7.6
+# Android specific settings
+fullscreen = 0
+android.archs = arm64-v8a, armeabi-v7a
+android.api = 31
 android.minapi = 21
+android.sdk = 31
+android.ndk = 23b
+android.ndk = 25b
+android.ndk_api = 21
 
-# (int) Android SDK version to use
-android.sdk = 20
-
-# (int) Android NDK version to use
-android.ndk = 19b
-
-# (bool) Use --private data storage
-#android.private_storage = True
-
-# (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
-
-# (str) Android entry point, default is ok for Kivy-based app
-android.entrypoint = org.renpy.android.PythonActivity
-
-# (list) Application meta-data
-#android.meta_data = key=value
-
-# (list) buildozer action to be used (list of str)
-#action_modes = list-append
+# Permissions
+android.permissions = RECORD_AUDIO,WRITE_EXTERNAL_STORAGE
+# Python for android (p4a) settings
+p4a.branch = master
+p4a.source_dir =
+p4a.local_recipes =
+[buildozer]
+# Log level
+log_level = 2
+# Display warning if run as root
+warn_on_root = 1
