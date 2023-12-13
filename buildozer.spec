@@ -1,6 +1,8 @@
 [app]
 package.name = myspeechemotionapp
 package.domain = org.example
+source.dir = .
+
 source.include_exts = py,png,jpg,kv,atlas,wav,model,result
 
 # (str) Application versioning (method1)
