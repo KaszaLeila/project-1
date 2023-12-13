@@ -1,52 +1,43 @@
 [app]
+package.name = myspeechemotionapp
+package.domain = org.example
+source.include_exts = py,png,jpg,kv,atlas,wav,model,result
 
-# Title of your application
-title = Speech Emotion Recognition
+# (str) Application versioning (method1)
+version = 1.0
 
-# Package name
-package.name = speechemotionrecognition
+# (list) Application requirements
+requirements = python3,kivy,pyaudio,numpy,librosa,scikit-learn,soundfile
 
-# Package domain
-package.domain = org.test
-
-# Source code directory
-source.dir = .
-
-# Source files to include
-source.include_exts = py,png,jpg,kv,atlas
-
-# Application version
-version = 0.1
-
-# Kivy version
-osx.kivy_version = 2.1.0
-
-# Application requirements
-
-requirements = python3==3.9.10,hostpython3==3.9.10,kivy,pyaudio,soundfile,numpy,librosa,scikit-learn,pillow
-
-# Supported orientations
+# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
 
-# Android specific settings
-fullscreen = 0
-android.arch = armeabi-v7a
-android.ndk = 25b
-android.api = 31
-android.minapi = 21
-
-# Permissions
+# (list) Permissions
 android.permissions = RECORD_AUDIO,WRITE_EXTERNAL_STORAGE
 
-# Python for android (p4a) settings
-p4a.branch = master
-p4a.source_dir =
-p4a.local_recipes =
+# (int) Android API to use
+android.api = 27
 
-[buildozer]
+# (int) Minimum API required
+android.minapi = 21
 
-# Log level
-log_level = 2
+# (int) Android SDK version to use
+android.sdk = 20
 
-# Display warning if run as root
-warn_on_root = 1
+# (int) Android NDK version to use
+android.ndk = 19b
+
+# (bool) Use --private data storage
+#android.private_storage = True
+
+# (str) Android NDK directory (if empty, it will be automatically downloaded.)
+#android.ndk_path =
+
+# (str) Android entry point, default is ok for Kivy-based app
+android.entrypoint = org.renpy.android.PythonActivity
+
+# (list) Application meta-data
+#android.meta_data = key=value
+
+# (list) buildozer action to be used (list of str)
+#action_modes = list-append
