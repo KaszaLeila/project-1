@@ -9,6 +9,9 @@ version = 1.0
 # (list) Application requirements
 requirements = python3,kivy,pyaudio,numpy,librosa,scikit-learn,soundfile
 
+# (str) Title of your application
+title = Speech Emotion Recognition
+
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
 
