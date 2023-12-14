@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8  # Válassz megfelelő Python verziót
+        python-version: 3.8  # Choose an available Python version
 
     - name: Install dependencies
       run: |
