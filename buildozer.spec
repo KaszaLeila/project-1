@@ -20,7 +20,8 @@ version = 0.1
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow, pyaudio==0.2.15
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow, https://github.com/kivy/python-for-android/archive/master.zip, pyaudio==0.2.11
+
 
 # Supported orientations
 orientation = portrait
