@@ -20,7 +20,7 @@ version = 0.1
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow, pyaudio
 
 # Supported orientations
 orientation = portrait
@@ -37,6 +37,7 @@ android.api = 31
 android.minapi = 21
 # android.sdk = 31
 android.ndk = 25b
+android.ndk_version = 21.3.6528147
 android.ndk_api = 21
 
 # Permissions
