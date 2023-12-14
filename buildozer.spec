@@ -20,7 +20,7 @@ version = 0.1
 osx.kivy_version = 2.1.0
 
 # Application requirements
-requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow, pyaudio
+requirements = python3==3.7.6,hostpython3==3.7.6, kivy, pillow, pyaudio==0.2.15
 
 # Supported orientations
 orientation = portrait
