@@ -1,5 +1,5 @@
 kivy==2.1.0
-pyaudio==0.2.15
+pyaudio==0.2.15; platform_system != "Windows"
 librosa==0.8.1
 soundfile==0.10.3.post1
 scikit-learn==0.24.2
