@@ -28,6 +28,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Build PyAudio from source
+      run: |
+        git clone --depth 1 --branch v0.2.15 https://github.com/jleb/pyaudio.git
+        cd pyaudio
+        python setup.py install
+
     - name: Build with Buildozer
       run: |
         sudo apt-get install -y \
