@@ -15,4 +15,7 @@ source.include_exts = py,png,jpg,kv,atlas
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy,pillow,pyaudio
+
+source.dir = .
+version = 1.0.0
